@@ -1,0 +1,118 @@
+/* User List Page specific styles */
+.user-list-container {
+    /* margin: 20px; */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+  }
+
+  .user-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-list-container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .create-user-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .create-user-btn:hover {
+    background-color: #219150;
+  }
+  
+  /* Table styling */
+  .user-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .user-list-table th,
+  .user-list-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+  }
+  
+  .user-list-table th {
+    background-color: #34495e;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .user-list-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-list-table tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Actions for user list items */
+  .user-list-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Specific styles for delete button */
+  .delete-btn {
+    background-color: #e74c3c;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .user-list-container {
+      padding: 10px;
+    }
+  
+    .user-list-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

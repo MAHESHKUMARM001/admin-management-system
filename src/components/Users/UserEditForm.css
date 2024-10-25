@@ -1,0 +1,114 @@
+/* UserEditForm.css */
+
+.user-edit-container {
+  /* max-width: 600px; Max width of the form */
+  /* margin: 50px auto; Center the form on the page */
+  padding: 30px; /* Padding inside the container */
+  border: 1px solid #e0e0e0; /* Light grey border around the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  background-color: #ffffff; /* White background */
+  transition: box-shadow 0.3s; /* Transition for shadow */
+}
+
+.user-edit-container:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.user-edit-container h1 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-family: 'Arial', sans-serif; /* Custom font */
+  font-weight: 600; /* Bold heading */
+}
+
+.user-edit-form {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.form-row {
+  display: flex; /* Use flexbox for form rows */
+  justify-content: space-between; /* Space between items */
+  margin-bottom: 15px; /* Space below each row */
+}
+
+.form-group {
+  flex: 1; /* Each group takes equal space */
+  margin-right: 10px; /* Space to the right for spacing */
+}
+
+.form-group:last-child {
+  margin-right: 0; /* Remove right margin for the last item */
+}
+
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below the label */
+  font-weight: bold; /* Bold label text */
+  color: #555; /* Darker color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  /* width: 100%; Full width for inputs */
+  padding: 12px; /* Increased padding for comfort */
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-size: 16px; /* Font size for inputs */
+  color: #333; /* Text color for inputs */
+  transition: border-color 0.3s; /* Transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect */
+}
+
+.form-actions {
+  display: flex; /* Use flexbox for action buttons */
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 20px; /* Space above buttons */
+}
+
+button {
+  padding: 12px 20px; /* Padding inside buttons */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor for buttons */
+  font-size: 16px; /* Font size for buttons */
+  font-weight: bold; /* Bold text for buttons */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for background and transform */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+button[type="button"] {
+  background-color: #f5bc00; /* Grey background for cancel button */
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268; /* Darker grey on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .form-row {
+      flex-direction: column; /* Stack fields vertically on small screens */
+  }
+  .form-group {
+      margin-right: 0; /* Remove right margin on small screens */
+      margin-bottom: 15px; /* Space below each group */
+  }
+}

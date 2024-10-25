@@ -1,0 +1,44 @@
+/* User Edit Page specific styles */
+.user-edit-container {
+    margin: 20px 0;
+  }
+  
+  .user-edit-container h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  .user-edit-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  .user-edit-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .user-edit-form input,
+  .user-edit-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .user-edit-form button {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-edit-form button:hover {
+    background-color: #e67e22;
+  }
+  
