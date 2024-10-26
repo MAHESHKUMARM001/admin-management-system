@@ -99,7 +99,7 @@ const Overview = () => {
         <div className="dashboard-container">
             <h1 className="dashboard-heading">Dashboard</h1>
             <div className="tag">
-                <p style={{ padding: 7, fontSize: 13, color: 'rgb(135, 134, 134)' }}>Dashboard</p>
+                <p style={{ padding: 7, fontSize: 13, color: 'rgb(135, 134, 134)' }}>Dashboards</p>
             </div>
 
             {/* Cards Section */}
